@@ -4,48 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=<device-width>, intitial-scale=1.0" />
-    <title>Static Webpage</title>
+    <title>MOVIE THEATER MAIN WEBPAGE</title>
+    <style>
+      table {
+        border: 1px solid;
+        margin: auto;
+      }
+      th,
+      td {
+        border: 1px solid;
+      }
+      img,
+      div {
+        border: 1px solid;
+      }
+      .info {
+        position: relative;
+        width: 50%;
+        text-align: center;
+      }
+      .img {
+        position: absolute;
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>PAGE NAME</h1>
-      <p>PAGES/LINKS</p>
+      <h1>MOVIE THEATER NAME</h1>
+      <p>
+        <a href="google.com">ABOUT</a> <a href="google.com">SHOWTIMES</a>
+        <a href="google.com">CONTACT US</a>
+      </p>
     </header>
     <hr />
-    <img src="" alt="IMG" />
+    <img src="" alt="IMG" style="margin: 0 auto 0 auto" />
     <hr />
-    <section style="display: flex; margin: 0 0 20% 0">
-      <img src="" alt="IMG" style="position: absolute; width: 50%" />
-      <div style="position: relative; width: 50%; margin-left: 60%">
+    <section style="display: flex">
+      <img src="" alt="IMG" class="img" />
+      <div class="info" style="margin-left: 50%">
         <h3>ABOUT</h3>
+        <p>TEXT</p>
         <button>LEARN MORE</button>
       </div>
     </section>
     <hr />
-    <section style="display: flex; margin: 0 0 20% 0">
-      <img
-        src=""
-        alt="IMG"
-        style="position: absolute; width: 50%; margin-left: 50%"
-      />
-      <div style="position: relative; width: 50%; margin-left: 25%">
+    <section style="display: flex">
+      <img src="" alt="IMG" class="img" />
+      <div class="info" style="margin-left: 50%">
         <h3>FEATURED FILM</h3>
+        <p>TEXT</p>
         <button>LEARN MORE</button>
       </div>
     </section>
     <hr />
-    <section style="display: flex; margin: 0 0 20% 0">
-      <img src="" alt="IMG" style="position: absolute; width: 50%" />
-      <div style="position: relative; width: 50%; margin-left: 60%">
-        <h3>THING</h3>
-        <button>LEARN MORE</button>
-      </div>
-    </section>
-    <hr />
-    <thead>
-      SHOWTIMES TABLE
-    </thead>
-    <table style="margin: 0 25%">
+    <table>
+      <h3 style="text-align: center">SHOWTIMES</h3>
       <tbody>
         <tr>
           <th></th>
@@ -137,24 +151,24 @@
         </tr>
       </tbody>
     </table>
-    <tfoot>
-      TABLE FOOTER
-    </tfoot>
+    <h5 style="text-align: center">TABLE FOOTER</h5>
     <hr />
     <div>
       <p>AMENITIES</p>
-      <ol>
-        <li>ORDERED</li>
-        <li>LIST</li>
-      </ol>
       <ul>
-        <li>UNORDERED</li>
-        <li>LIST</li>
+        <li>CONCESSIONS</li>
+        <li>ARCADE</li>
+        <li>ETC.</li>
       </ul>
     </div>
     <hr />
     <footer>
-      <p>LINKS</p>
+      <p style="font-size: 8px">
+        <a href="google.com">ABOUT</a><br /><a href="google.com">SHOWTIMES</a
+        ><br /><a href="google.com">LOCATIONS</a><br /><a href="google.com"
+          >CONTACT US</a
+        >
+      </p>
     </footer>
   </body>
 </html>
