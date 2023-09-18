@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  margin: 3% 20%;
+  background-color: #e7efc5;
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+}
+
+table {
+  padding: 20px;
+  background-color: #bfd7b5;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 5px 15px;
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+}
+
+img {
+  border: 2px solid #413c58;
+  border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.pizza-oven {
+  height: 400px;
+  width: 100%;
+  object-position: 0 80%;
+}
+
+.mozarella-sticks {
+  width: 500px;
+  object-position: 0 80%;
+}
+
+.pasta,
+.salads {
+  width: 500px;
+  object-position: 0 0%;
+}
+
+.pizza {
+  width: 500px;
+  object-position: 0 70%;
+}
+
+.chocolate-chip-cookies {
+  width: 500px;
+  object-position: 0 50%;
+}
+
+.lemonade {
+  width: 500px;
+  object-position: 0 20%;
+}
+
+a:link {
+  color: #76a79b;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #5a5379;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #a4c695;
+  font-weight: 600;
+}
