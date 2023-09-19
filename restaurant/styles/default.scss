@@ -1,0 +1,32 @@
+$pageColor: #e7efc5;
+$textColor: #413c58;
+$boldWght: 600;
+
+@font-face {
+  font-family: "Rubik";
+  src: url("Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  margin: 3% 20%;
+  background-color: $pageColor;
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+  color: $textColor;
+}
+
+a {
+  font-weight: $boldWght;
+
+  &:link {
+    color: #76a79b;
+  }
+
+  &:visited {
+    color: #5a5379;
+  }
+
+  &:hover {
+    color: #a4c695;
+  }
+}

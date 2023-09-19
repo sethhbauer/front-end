@@ -5,5 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <div class="text-inputs">
+        <label for="first-name">First Name:</label>
+        <input type="text" name="first-name" id="first-name" />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" maxlength="20" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+      <br />
+
+      <div class="date">
+        <label>Date:</label>
+        <input type="date" />
+      </div>
+      <br />
+
+      <div class="radio-buttons">
+        <label for="option1">Option 1</label>
+        <input type="radio" name="options" id="option1" />
+        <label for="option2">Option 2</label>
+        <input type="radio" name="options" id="option2" />
+        <label for="option3">Option 3</label>
+        <input type="radio" name="options" id="option3" />
+      </div>
+      <br />
+
+      <div class="checkbox-buttons">
+        <label for="option1">Option 1</label>
+        <input type="checkbox" name="options" id="option1" />
+        <label for="option2">Option 2</label>
+        <input type="checkbox" name="options" id="option2" />
+        <label for="option3">Option 3</label>
+        <input type="checkbox" name="options" id="option3" />
+      </div>
+      <br />
+
+      <div class="dropdown">
+        <select>
+          <option selected disabled>Select Options</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="text-box">
+        <textarea name="comments" id="text-area" cols="30" rows="10"></textarea>
+        <label for="text-area"></label>
+      </div>
+      <br />
+
+      <div class="submit-button">
+        <input type="submit" value="Book" />
+      </div>
+      <br />
+    </form>
+  </body>
 </html>
