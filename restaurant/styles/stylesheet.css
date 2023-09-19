@@ -29,7 +29,7 @@ th {
 img {
   border: 2px solid #413c58;
   border-radius: 10px;
-  height: 500px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -40,28 +40,28 @@ img {
 }
 
 .mozarella-sticks {
-  width: 500px;
+  width: 250px;
   object-position: 0 80%;
 }
 
 .pasta,
 .salads {
-  width: 500px;
+  width: 250px;
   object-position: 0 0%;
 }
 
 .pizza {
-  width: 500px;
+  width: 250px;
   object-position: 0 70%;
 }
 
 .chocolate-chip-cookies {
-  width: 500px;
+  width: 250px;
   object-position: 0 50%;
 }
 
 .lemonade {
-  width: 500px;
+  width: 250px;
   object-position: 0 20%;
 }
 
