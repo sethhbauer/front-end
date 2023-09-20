@@ -44,33 +44,34 @@
           </div>
 
           <div class="time-inputs">
-            <label for="date-reserved">Date of Reservation</label>
             <input
               type="date"
               name="date-reserved"
               id="date-reserved"
               required
             />
-            <label for="time-reserved">Time of Reservation</label>
+            <label for="date-reserved">Date of Reservation</label>
+            <br /><br />
             <input
               type="time"
               name="time-reserved"
               id="time-reserved"
               required
             />
+            <label for="time-reserved">Time of Reservation</label>
             <br /><br />
           </div>
 
           <div class="appetizer-options">
             <p>Please choose one appetizer for your meal:</p>
-            <input type="radio" name="options" id="option1" />
-            <label for="option1">Mozarella Sticks</label>
+            <input type="radio" name="app-options" id="app-option1" />
+            <label for="app-option1" class="option">Mozarella Sticks</label>
             <br />
-            <input type="radio" name="options" id="option2" />
-            <label for="option2">Mac n' Cheese Bites</label>
+            <input type="radio" name="app-options" id="app-option2" />
+            <label for="app-option2" class="option">Mac n' Cheese Bites</label>
             <br />
-            <input type="radio" name="options" id="option3" />
-            <label for="option3">Hush Puppies</label>
+            <input type="radio" name="app-options" id="app-option3" />
+            <label for="app-option3" class="option">Hush Puppies</label>
             <br /><br />
           </div>
 
@@ -87,14 +88,14 @@
 
           <div class="extras-options">
             <p>Would you like any of the following (check all that apply):</p>
-            <input type="checkbox" name="options" id="option1" />
-            <label for="option1">Drink</label>
+            <input type="checkbox" name="ex-options" id="ex-option1" />
+            <label for="ex-option1" class="option">Drink</label>
             <br />
-            <input type="checkbox" name="options" id="option2" />
-            <label for="option2">Dessert</label>
+            <input type="checkbox" name="ex-options" id="ex-option2" />
+            <label for="ex-option2" class="option">Dessert</label>
             <br />
-            <input type="checkbox" name="options" id="option3" />
-            <label for="option3">Salad</label>
+            <input type="checkbox" name="ex-options" id="ex-option3" />
+            <label for="ex-option3" class="option">Salad</label>
             <br /><br />
           </div>
 
@@ -109,18 +110,18 @@
             ></textarea>
             <br /><br />
             <input type="email" name="email" id="email" placeholder="Email" />
-            <br />
+            <br /><br />
             <input type="checkbox" name="notification" id="notification" />
-            <label for="notification"
+            <label for="notification" class="option"
               >I would like to be notified 30 minutes before my reservation by
               email.</label
             >
-            <br /><br />
+            <br /><br /><br />
           </div>
 
           <div class="submit">
             <button type="submit">Book</button>
-            <br /><br />
+            <br /><br /><br /><br />
           </div>
         </form>
       </div>
@@ -133,7 +134,7 @@
           src=""
           frameborder="0"
         ></iframe>
-        <p class="map-alt-mess">Google Maps embed failed to load</p>
+        <p class="map-alt-mess">Google Maps failed to load</p>
       </div>
     </div>
   </body>

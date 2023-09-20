@@ -1,5 +1,9 @@
 $pageColor: #e7efc5;
 $textColor: #413c58;
+$backgroundColor: #fef7e3;
+$linkColor: #76a79b;
+$linkVisitColor: #5a5379;
+$linkHoverColor: #a4c695;
 $boldWght: 600;
 
 @font-face {
@@ -19,14 +23,14 @@ a {
   font-weight: $boldWght;
 
   &:link {
-    color: #76a79b;
+    color: $linkColor;
   }
 
   &:visited {
-    color: #5a5379;
+    color: $linkVisitColor;
   }
 
   &:hover {
-    color: #a4c695;
+    color: $linkHoverColor;
   }
 }
