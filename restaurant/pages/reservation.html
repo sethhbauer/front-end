@@ -5,9 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservation</title>
-    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+    <link rel="icon" href="../images/icon.svg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/reservation-page.css"
+    />
   </head>
   <body>
-    <h1 style="text-align: center">Coming Soon...</h1>
+    <div class="reservation-page-entire">
+      <div class="header">
+        <ul>
+          <li><a href="../index.html">Main</a><br /><br /></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+        </ul>
+        <img src="" alt="" />
+        <br /><br />
+      </div>
+
+      <div class="reservation">
+        <h2>Book a Reservation</h2>
+        <form>
+          <div class="text-inputs">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+            <br /><br />
+          </div>
+
+          <div class="time-inputs">
+            <label for="date-reserved">Date of Reservation</label>
+            <input
+              type="date"
+              name="date-reserved"
+              id="date-reserved"
+              required
+            />
+            <label for="time-reserved">Time of Reservation</label>
+            <input
+              type="time"
+              name="time-reserved"
+              id="time-reserved"
+              required
+            />
+            <br /><br />
+          </div>
+
+          <div class="appetizer-options">
+            <p>Please choose one appetizer for your meal:</p>
+            <input type="radio" name="options" id="option1" />
+            <label for="option1">Mozarella Sticks</label>
+            <br />
+            <input type="radio" name="options" id="option2" />
+            <label for="option2">Mac n' Cheese Bites</label>
+            <br />
+            <input type="radio" name="options" id="option3" />
+            <label for="option3">Hush Puppies</label>
+            <br /><br />
+          </div>
+
+          <div class="pasta-options">
+            <p>Please choose one pasta for your meal:</p>
+            <select>
+              <option selected disabled>Please Choose One</option>
+              <option>Spaghetti</option>
+              <option>Linguini</option>
+              <option>Lasagna</option>
+            </select>
+            <br /><br />
+          </div>
+
+          <div class="extras-options">
+            <p>Would you like any of the following (check all that apply):</p>
+            <input type="checkbox" name="options" id="option1" />
+            <label for="option1">Drink</label>
+            <br />
+            <input type="checkbox" name="options" id="option2" />
+            <label for="option2">Dessert</label>
+            <br />
+            <input type="checkbox" name="options" id="option3" />
+            <label for="option3">Salad</label>
+            <br /><br />
+          </div>
+
+          <div class="additional-info">
+            <p>Addition information for your reservation:</p>
+            <textarea
+              name="comments"
+              id="text-area"
+              cols="36"
+              rows="5 "
+              placeholder="Let us know anything to make this reservation special"
+            ></textarea>
+            <br /><br />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <br />
+            <input type="checkbox" name="notification" id="notification" />
+            <label for="notification"
+              >I would like to be notified 30 minutes before my reservation by
+              email.</label
+            >
+            <br /><br />
+          </div>
+
+          <div class="submit">
+            <button type="submit">Book</button>
+            <br /><br />
+          </div>
+        </form>
+      </div>
+
+      <div class="footer" id="map">
+        <iframe
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-refer-when-downgrade"
+          src=""
+          frameborder="0"
+        ></iframe>
+        <p class="map-alt-mess">Google Maps embed failed to load</p>
+      </div>
+    </div>
   </body>
 </html>
