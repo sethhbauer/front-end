@@ -44,9 +44,15 @@ select {
     border-color: $linkColor;
   }
 
+  &:-webkit-autofill {
+    -webkit-background-clip: text;
+    box-shadow: inset 0 0 20px 20px $backgroundColor;
+  }
+
   &[type="date"],
   &[type="time"] {
-    padding: 2px;
+    width: 110px;
+    height: 15px;
   }
 
   &[type="checkbox"] {
