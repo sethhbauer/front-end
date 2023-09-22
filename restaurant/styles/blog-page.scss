@@ -1,1 +1,57 @@
 @import "default";
+
+.header,
+.articles,
+.footer {
+  margin: 3% 17%;
+
+  .img-head-container {
+    width: 90%;
+    height: 145px;
+
+    .img-blog-head {
+      position: relative;
+      image-rendering: crisp-edges;
+      image-resolution: 300dpi;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-69%) translateX(40%);
+      object-fit: cover;
+      object-position: 0 -20%;
+    }
+  }
+
+  .head-background {
+    position: absolute;
+    margin: -10%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-left: 600px solid transparent;
+    border-top: 500px solid $linkHoverColor;
+    transform: translateY(-20%) translateX(-30.25%);
+    max-width: 89.9%;
+    overflow-x: hidden;
+  }
+
+  .menu-link,
+  .reservation-link {
+    color: $menuColor;
+    font-size: 25px;
+    text-decoration: none;
+  }
+
+  .blog-title {
+    color: $textColor;
+  }
+
+  .date {
+    font-size: 13px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .credit {
+    font-size: 10px;
+  }
+}

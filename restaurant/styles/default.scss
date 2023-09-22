@@ -4,6 +4,7 @@ $backgroundColor: #fef7e3;
 $linkColor: #76a79b;
 $linkVisitColor: #5a5379;
 $linkHoverColor: #a4c695;
+$menuColor: #f3edda;
 $boldWght: 600;
 
 @font-face {
@@ -12,8 +13,13 @@ $boldWght: 600;
 }
 
 body {
-  margin: 3% 20%;
   background-color: $pageColor;
+}
+
+.index-content,
+.reservation-page-content,
+.blog-page-content,
+.article-content {
   font-family: "Rubik", sans-serif;
   font-size: medium;
   color: $textColor;
