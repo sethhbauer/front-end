@@ -3,9 +3,13 @@
 $tableColor: #bfd7b5;
 
 .header,
-.footer,
-.menu-categories {
+.menu-categories,
+.footer {
   margin: 3% 20%;
+
+  .fda-link {
+    font-size: 14px;
+  }
 }
 
 table {

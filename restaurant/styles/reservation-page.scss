@@ -5,26 +5,28 @@
 .footer {
   margin: 3% 20%;
 }
-
 .footer {
-  background-color: $linkHoverColor;
-  border: 2px solid $linkColor;
-  border-radius: 10px;
-  height: 250px;
-  width: 400px;
-
-  iframe {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  .map {
+    background-color: $linkHoverColor;
+    border: 2px solid $linkColor;
     border-radius: 10px;
-    z-index: 1;
-  }
+    height: 250px;
+    width: 400px;
 
-  .map-alt-mess {
-    position: relative;
-    text-align: center;
-    margin: -32.5% 7%;
+    iframe {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      z-index: 1;
+    }
+
+    .map-alt-mess {
+      position: relative;
+      text-align: center;
+      margin: -32.5% 7%;
+      font-size: medium;
+    }
   }
 }
 
