@@ -1,10 +1,5 @@
 @import "default";
 
-.header,
-.reservation-form,
-.footer {
-  margin: 3% 20%;
-}
 .footer {
   .map {
     background-color: $linkHoverColor;
@@ -37,10 +32,15 @@ select {
   outline: none;
   padding: 5px;
   margin: 5px;
+  width: 150px;
+  height: 15px;
   border: 2px solid $linkHoverColor;
   border-radius: 4px;
   background-color: $backgroundColor;
   color: $textColor;
+  transition: 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Rubik", sans-serif;
 
   &:focus {
     border-color: $linkColor;
@@ -57,10 +57,13 @@ select {
     height: 15px;
   }
 
+  &[type="radio"],
   &[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     margin: 0 0 0 20px;
+    width: auto;
+    height: auto;
     transform: translateY(2px);
     border-color: $linkHoverColor;
     cursor: pointer;
@@ -73,54 +76,62 @@ select {
     &:checked {
       background-color: $linkColor;
     }
-  }
 
-  &[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0 0 0 20px;
-    transform: translateY(2px);
-    border-color: $linkHoverColor;
-    border-radius: 100%;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $linkHoverColor;
-      border-color: $linkColor;
-    }
-
-    &:checked {
-      background-color: $linkColor;
+    &[type="radio"] {
+      border-radius: 100%;
     }
   }
 
-  textarea {
+  &[type="email"] {
+    width: 260px;
+  }
+
+  &.select-pasta {
+    width: 165px;
+    height: 30px;
+    padding: 2px;
+  }
+
+  &.comments {
     padding: 10px;
+    width: 250px;
+    height: 75px;
   }
 }
 
 .option {
-  cursor: pointer;
   font-size: 12px;
+  cursor: pointer;
 }
 
 button[type="submit"] {
+  width: 80px;
+  height: 40px;
   padding: 5px;
-  background-color: $backgroundColor;
-  border: 3px solid $linkColor;
-  border-radius: 6px;
-  height: 35px;
-  width: 100px;
+  background-color: $linkHoverColor;
+  border: none;
+  border-radius: 10px;
   color: $textColor;
-  font-weight: $boldWght;
   font-size: 18px;
+  font-weight: 900;
+  box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 
   &:hover {
-    background-color: $linkHoverColor;
+    transition: 0.05s;
+    position: relative;
+    bottom: 0.05em;
+    box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+      0 4px 4px 1px rgba(0, 0, 0, 0.2);
   }
 
   &:active {
+    transition: 0.2s;
     background-color: $linkColor;
+    position: relative;
+    top: 0.1em;
+    box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+      0 1px 2px rgba(0, 0, 0, 0.5);
   }
 }

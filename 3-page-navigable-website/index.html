@@ -10,22 +10,28 @@
   </head>
   <body>
     <div class="index-content">
-      <div class="header">
-        <ul>
-          <li><a href="pages/reservation.html">Reservation</a><br /><br /></li>
-          <li><a href="pages/blog.html">Blog</a><br /><br /></li>
-        </ul>
+      <div class="menu-bar">
+        <div class="menu-bar-background"></div>
+        <a href="./pages/blog.html" class="blog-link">Blog</a><br />
+        <a href="./pages/reservation.html" class="reservation-link"
+          >Reservation</a
+        >
+        <div class="menu-img-container">
+          <img src="./images/menu.png" alt="birdy" class="menu-img" />
+        </div>
+      </div>
+
+      <div class="table-of-contents">
+        <h3>What you Cravin'?</h3>
+        <div class="jump-links">
+          <a href="#menu-appetizers">Appetizers</a><br />
+          <a href="#menu-pastas">Pastas</a><br />
+          <a href="#menu-pizzas">Pizzas</a><br />
+          <a href="#menu-salads">Salads</a><br />
+          <a href="#menu-desserts">Desserts</a><br />
+          <a href="#menu-drinks">Drinks</a><br /><br />
+        </div>
         <img src="images/img-head.jpg" alt="Pizza Oven" class="pizza-oven" />
-        <br /><br />
-        <p>What you Cravin'?</p>
-        <ul>
-          <li><a href="#menu-appetizers">Appetizers</a><br /><br /></li>
-          <li><a href="#menu-pastas">Pastas</a><br /><br /></li>
-          <li><a href="#menu-pizzas">Pizzas</a><br /><br /></li>
-          <li><a href="#menu-salads">Salads</a><br /><br /></li>
-          <li><a href="#menu-desserts">Desserts</a><br /><br /></li>
-          <li><a href="#menu-drinks">Drinks</a></li>
-        </ul>
       </div>
 
       <div class="menu-categories">
@@ -39,11 +45,14 @@
           <p>
             Get the party started with some fan favorites. Dig in, elbows
             bumping, with your friends<br /><br />Just make sure you are the one
-            who grabs the last winning bite!
+            who grabs the last winning bite!<br /><br />
           </p>
-          <ul>
+          <ul class="menu-items">
             <li>Mac'n Cheese Bites<br /><br /></li>
             <li>Mozarella Sticks<br /><br /></li>
+            <li>Totchos<br /><br /></li>
+            <li>Pizza Monkey Bread<br /><br /></li>
+            <li>Bacon Wrapped Shrimp<br /><br /></li>
             <li>Hush Puppies</li>
           </ul>
         </div>
@@ -56,11 +65,19 @@
           </div>
           <p>
             Just like mama always makes it!<br /><br />We hope you aren't
-            wearing your Sunday clothes.
+            wearing your Sunday clothes.<br /><br />
           </p>
-          <ul>
+          <ul class="menu-items">
             <li>Spaghetti<br /><br /></li>
             <li>Linguini<br /><br /></li>
+            <li>Fettuccine Alfredo<br /><br /></li>
+            <li>Pasta Carbonara<br /><br /></li>
+            <li>Ravioli<br /><br /></li>
+            <li>Beef Stoganoff<br /><br /></li>
+            <li>Chicken Penne<br /><br /></li>
+            <li>Turkey Tetrazzini<br /><br /></li>
+            <li>Cacio e Pepe<br /><br /></li>
+            <li>Baked Gnocchi<br /><br /></li>
             <li>Lasagna</li>
           </ul>
         </div>
@@ -71,11 +88,16 @@
           <div class="body-image">
             <img src="images/img-pizza.jpg" alt="Pepperoni Pizza" />
           </div>
-          <p>Cheese and meat.<br /><br />Need we say more?</p>
-          <ul>
-            <li>Combination<br /><br /></li>
-            <li>Margarita<br /><br /></li>
-            <li>Pepperoni</li>
+          <p>Cheese and meat.<br /><br />Need we say more?<br /><br /></p>
+          <ul class="menu-items">
+            <li>Pepperoni<br /><br /></li>
+            <li>BBQ Chicken<br /><br /></li>
+            <li>Hawaiian<br /><br /></li>
+            <li>Cheese<br /><br /></li>
+            <li>Margherita<br /><br /></li>
+            <li>Vegetarian<br /><br /></li>
+            <li>Neapolitan<br /><br /></li>
+            <li>Custom Order</li>
           </ul>
         </div>
 
@@ -87,13 +109,23 @@
           </div>
           <p>
             For those hoping to crunch into something fresh.<br /><br />This
-            isn't your typical rabbit food.
+            isn't your typical rabbit food.<br /><br />
           </p>
-          <ol>
-            <li>Chef<br /><br /></li>
-            <li>Southwestern<br /><br /></li>
-            <li>Nuts and Berries</li>
-          </ol>
+          <ul class="menu-items">
+            <li>Greek<br /><br /></li>
+            <li>Italian Pasta<br /><br /></li>
+            <li>Classic Coleslaw<br /><br /></li>
+            <li>Mediterranean Chickpea Wedge<br /><br /></li>
+            <li>Caprese<br /><br /></li>
+            <li>Grilled Shrimp<br /><br /></li>
+            <li>Quinoa Spinach<br /><br /></li>
+            <li>Garden<br /><br /></li>
+            <li>Southwest<br /><br /></li>
+            <li>Persian Shirazi<br /><br /></li>
+            <li>Peach Arugula<br /><br /></li>
+            <li>Summer Fruit<br /><br /></li>
+            <li>Caesar</li>
+          </ul>
         </div>
 
         <div id="menu-desserts">
@@ -102,12 +134,18 @@
           <div class="body-image">
             <img src="images/img-dessert.jpg" alt="Chocolate Chip Cookes" />
           </div>
-          <p>Yum Yum<br /><br />...Yum!</p>
-          <ol>
+          <p>Yum Yum<br /><br />...Yum!<br /><br /></p>
+          <ul class="menu-items">
             <li>Chocolate Chip Cookie<br /><br /></li>
             <li>Lava Cake<br /><br /></li>
-            <li>Ice Cream</li>
-          </ol>
+            <li>Tiramisu<br /><br /></li>
+            <li>Key Lime Pie<br /><br /></li>
+            <li>Crème Brûlée<br /><br /></li>
+            <li>Cannoli<br /><br /></li>
+            <li>Chocolate Mousse<br /><br /></li>
+            <li>Cheesecake<br /><br /></li>
+            <li>Classic Milkshake</li>
+          </ul>
         </div>
 
         <div id="menu-drinks">
@@ -118,13 +156,16 @@
           </div>
           <p>
             Cold and crisp.<br /><br />Grab a refreshing glass of your
-            favorites!
+            favorites!<br /><br />
           </p>
-          <ol>
-            <li>Lemonade<br /><br /></li>
-            <li>Root Beer<br /><br /></li>
-            <li>Sprite</li>
-          </ol>
+          <ul class="menu-items">
+            <li>Classic Lemonade<br /><br /></li>
+            <li>Raspberry Lemonade<br /><br /></li>
+            <li>Bellini Peach Tea<br /><br /></li>
+            <li>Ice Tea<br /><br /></li>
+            <li>Soft Drink<br /><br /></li>
+            <li>Water</li>
+          </ul>
         </div>
 
         <div class="table">
@@ -196,6 +237,10 @@
         <br /><br /><br />
         <p class="credit">Powered by DevPipeline</p>
       </div>
+      <button onclick="topFunction()" id="top-button" title="Go to Top">
+        ↑
+      </button>
     </div>
+    <script src="./scripts/to-top.js"></script>
   </body>
 </html>

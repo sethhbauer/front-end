@@ -14,13 +14,13 @@
   </head>
   <body>
     <div class="reservation-page-content">
-      <div class="header">
-        <ul>
-          <li><a href="../index.html">Menu</a><br /><br /></li>
-          <li><a href="../pages/blog.html">Blog</a></li>
-        </ul>
-        <img src="" alt="" />
-        <br /><br />
+      <div class="menu-bar">
+        <div class="menu-bar-background"></div>
+        <a href="../index.html" class="menu-link">Menu</a><br />
+        <a href="./blog.html" class="blog-link">Blog</a>
+        <div class="menu-img-container">
+          <img src="../images/menu.png" alt="birdy" class="menu-img" />
+        </div>
       </div>
 
       <div class="reservation-form">
@@ -71,16 +71,33 @@
             <label for="app-option2" class="option">Mac n' Cheese Bites</label>
             <br />
             <input type="radio" name="app-options" id="app-option3" />
-            <label for="app-option3" class="option">Hush Puppies</label>
+            <label for="app-option3" class="option">Totchos</label>
+            <br />
+            <input type="radio" name="app-options" id="app-option4" />
+            <label for="app-option4" class="option">Pizza Monkey Bread</label>
+            <br />
+            <input type="radio" name="app-options" id="app-option5" />
+            <label for="app-option5" class="option">Bacon Wrapped Shrimp</label>
+            <br />
+            <input type="radio" name="app-options" id="app-option6" />
+            <label for="app-option6" class="option">Hush Puppies</label>
             <br /><br />
           </div>
 
           <div class="pasta-options">
             <p>Please choose one pasta for your meal:</p>
-            <select>
+            <select class="select-pasta">
               <option selected disabled>Please Choose One</option>
               <option>Spaghetti</option>
               <option>Linguini</option>
+              <option>Fettuccine Alfredo</option>
+              <option>Pasta Carbonara</option>
+              <option>Ravioli</option>
+              <option>Beef Stoganoff</option>
+              <option>Chicken Penne</option>
+              <option>Turkey Tetrazzini</option>
+              <option>Cacio e Pepe</option>
+              <option>Baked Gnocchi</option>
               <option>Lasagna</option>
             </select>
             <br /><br />
@@ -107,6 +124,7 @@
               cols="36"
               rows="5 "
               placeholder="Let us know anything to make this reservation special"
+              class="comments"
             ></textarea>
             <br /><br />
             <input type="email" name="email" id="email" placeholder="Email" />
@@ -143,6 +161,10 @@
         <br /><br /><br />
         <p class="credit">Powered by DevPipeline</p>
       </div>
+      <button onclick="topFunction()" id="top-button" title="Go to Top">
+        ↑
+      </button>
     </div>
+    <script src="../scripts/to-top.js"></script>
   </body>
 </html>
