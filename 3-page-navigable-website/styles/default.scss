@@ -12,8 +12,19 @@ $boldWght: 600;
   src: url("Rubik-VariableFont_wght.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $pageColor;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin: 3% 17%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .index-content,
@@ -23,6 +34,52 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: medium;
   color: $textColor;
+
+  .menu-bar {
+    .menu-img-container {
+      width: 90%;
+      height: 145px;
+
+      .menu-img {
+        position: relative;
+        image-rendering: crisp-edges;
+        image-resolution: 300dpi;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-69%) translateX(40%);
+        object-fit: cover;
+        object-position: 0 -20%;
+        border: none;
+      }
+    }
+
+    .menu-bar-background {
+      position: absolute;
+      margin: -10%;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border-left: 610px solid transparent;
+      border-top: 500px solid $linkHoverColor;
+      transform: translateY(-20%) translateX(-30.25%);
+      max-width: 89.9%;
+      overflow-x: hidden;
+    }
+
+    .menu-link,
+    .blog-link,
+    .reservation-link {
+      color: $menuColor;
+      font-size: 25px;
+      text-decoration: none;
+      transition: 0.4s;
+
+      &:hover {
+        position: relative;
+        left: 0.1em;
+      }
+    }
+  }
 }
 
 .credit {
@@ -31,6 +88,10 @@ body {
 
 a {
   font-weight: $boldWght;
+  transition: 0.2s;
+  color: $linkColor;
+  text-decoration: underline;
+  cursor: pointer;
 
   &:link {
     color: $linkColor;
@@ -43,4 +104,49 @@ a {
   &:hover {
     color: $linkHoverColor;
   }
+}
+
+::placeholder {
+  font-family: "Rubik", sans-serif;
+}
+
+#top-button {
+  display: block;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: -100px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $linkColor;
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    transition: 0.05s;
+    background-color: $linkHoverColor;
+    box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+      0 4px 4px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2.5px);
+  }
+
+  &:active {
+    transition: 0.2s;
+    background-color: $linkColor;
+    bottom: 45px;
+    box-shadow: inset 0 -0.15em 0.05em 0em rgba(0, 0, 0, 0.25),
+      0 1px 2px rgba(0, 0, 0, 0.5);
+    transform: translateY(5px);
+  }
+}
+
+.article-title {
+  font-size: 29px;
 }
