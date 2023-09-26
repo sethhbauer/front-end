@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Capstone</title>
+		<link rel="icon" href="./images/wordpress-favicon.ico" sizes="32x32" />
+		<link rel="icon" href="./images/wmark.png" sizes="192x192" />
+		<link rel="stylesheet" href="./styles/index.css" />
+	</head>
+	<body>
+		<div class="capstone-content">
+			<div class="header" id="top">
+				<a href="https://wp-themes.com/twentytwentytwo" class="twenty-twenty-two"
+					>Twenty Twenty Two</a
+				>
+				<ul class="nav-bar">
+					<li>
+						<button>
+							<a href="https://wp-themes.com/twentytwentytwo/?page_id=2" class="about-page"
+								>About</a
+							>
+						</button>
+					</li>
+					<li>
+						<button onmouseover="showDropdown()" onmouseleave="hideDropdown()">
+							<a href="https://wp-themes.com/twentytwentytwo/?page_id=46" class="parent-page"
+								>Parent Page</a
+							>
+						</button>
+						<button
+							class="dropdown-button"
+							id="dropdown-button"
+							onclick="toggleDropdown()"
+							onmouseover="showDropdown()"
+							onmouseleave="hideDropdown()">
+							&#9663;
+						</button>
+						<div
+							class="dropdown-content"
+							id="dropdown-content"
+							onmouseover="showDropdown()"
+							onmouseleave="hideDropdown()">
+							<a href="https://wp-themes.com/twentytwentytwo/?page_id=46" class="sub-page"
+								>Sub-page</a
+							>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 class="sub-header">Elements</h2>
+				<hr />
+			</div>
+
+			<div class="main">
+				<div class="headings">
+					<br />
+					<p>
+						The purpose of this HTML is to help determine what default settings are with CSS and to
+						make sure that all possible HTML Elements are included in this HTML so as to not miss
+						any possible Elements when designing a site.
+					</p>
+					<br />
+					<hr />
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<hr />
+				</div>
+
+				<div class="paragraphs">
+					<h2>Paragraph</h2>
+					<p>
+						Lorem ipsum dolor sit amet,
+						<a href="">test link</a>
+						adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc
+						iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt
+						nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+						volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed
+						tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
+						commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+						<br /><br />
+						Lorem ipsum dolor sit amet,
+						<em>emphasis</em>
+						consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec
+						faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet
+						at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum,
+						turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.
+						Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+						consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+					</p>
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<hr />
+				</div>
+
+				<div class="lists">
+					<h2>List Types</h2>
+					<h3>Definition List</h3>
+					<dl>
+						<dd>This is a definition list division</dd>
+					</dl>
+					<h3>Ordered List</h3>
+					<ol>
+						<li>List Item 1</li>
+						<li>List Item 2</li>
+						<li>List Item 3</li>
+					</ol>
+					<h3>Unordered List</h3>
+					<ul>
+						<li>List Item 1</li>
+						<li>List Item 2</li>
+						<li>List Item 3</li>
+					</ul>
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<hr />
+				</div>
+
+				<div class="form">
+					<h2>Forms</h2>
+					<form>
+						<fieldset>
+							<legend>Legend</legend>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis
+								est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.
+								Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent
+								mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam
+								eget metus.
+							</p>
+							<h2>Form Element</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis
+								est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.
+							</p>
+							<br />
+							<label for="text-field">Text Field:</label>
+							<br />
+							<input type="text" name="text-field" id="text-field" />
+							<br />
+							<br />
+							<label for="text-area">Text Area:</label>
+							<br />
+							<textarea name="text-area" id="text-area" cols="20" rows="2"></textarea>
+							<br />
+							<br />
+							<label for="select-element">Select Element:</label>
+							<br />
+							<select name="select-element" id="select-element">
+								<optgroup label="Option Group 1">
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+									<option value="option3">Option 3</option>
+								</optgroup>
+								<optgroup label="Option Group 2">
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+									<option value="option3">Option 3</option>
+								</optgroup>
+							</select>
+							<br />
+							<br />
+							<label for="radio-buttons">Radio Buttons:</label>
+							<br />
+							<input type="radio" name="radio-options" id="radio-option-1" />
+							<label for="radio-option-1">Radio 1</label>
+							<br />
+							<input type="radio" name="radio-options" id="radio-option-2" />
+							<label for="radio-option-2">Radio 2</label>
+							<br />
+							<input type="radio" name="radio-options" id="radio-option-3" />
+							<label for="radio-option-3">Radio 3</label>
+							<br />
+							<br />
+							<label for="checkbox">Checkboxes:</label>
+							<br />
+							<input type="checkbox" name="checkbox-options" id="checkbox-option-1" />
+							<label for="checkbox-option-1">Checkbox 1</label>
+							<br />
+							<input type="checkbox" name="checkbox-options" id="checkbox-option-2" />
+							<label for="checkbox-option-2">Checkbox 2</label>
+							<br />
+							<input type="checkbox" name="checkbox-options" id="checkbox-option-3" />
+							<label for="checkbox-option-3">Checkbox 3</label>
+							<br />
+							<br />
+							<label for="password">Password:</label>
+							<input type="password" name="password" id="password" />
+							<br />
+							<br />
+							<label for="file-input">File Input:</label>
+							<br />
+							<input type="file" name="choose-file" id="choose-file" />
+							<br />
+							<br />
+							<button type="reset">Clear</button>
+							<button type="submit">Submit</button>
+							<br />
+							<br />
+						</fieldset>
+					</form>
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<hr />
+				</div>
+
+				<div class="table-content">
+					<h2>Tables</h2>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Table Header 1</th>
+								<th>Table Header 2</th>
+								<th>Table Header 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Division 1</td>
+								<td>Division 2</td>
+								<td>Division 3</td>
+							</tr>
+							<tr>
+								<td>Division 1</td>
+								<td>Division 2</td>
+								<td>Division 3</td>
+							</tr>
+							<tr>
+								<td>Division 1</td>
+								<td>Division 2</td>
+								<td>Division 3</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<hr />
+				</div>
+
+				<div class="misc-stuff">
+					<h2>Misc Stuff -- abbr, acronym, pre, code, sub, sup, etc.</h2>
+					<p>
+						Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing
+						elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis
+						suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+						gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
+						justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget
+						sapien fringilla nonummy. <u>NBA</u> Mauris a ante. Suspendisse quam sem, consequat at,
+						commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <u>AVE</u>
+					</p>
+					<br />
+					<code>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis
+						est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.
+						Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent
+						mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam
+						eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy.
+						<u>NBA</u>
+						<br />
+						Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+						Morbi imperdiet augue quis tellus. <u>AVE</u> </code
+					><br /><br />
+					<blockquote>
+						“This stylesheet is going to help so freaking much.”
+						<br />
+						-Blockquote
+					</blockquote>
+					<br />
+					<a href="#top" class="jump-to-top">[top]</a>
+					<br />
+					<p class="footers footer1">
+						<span class="date">September 5, 2008</span>
+						Theme Admin
+						<a href="https://wp-themes.com/twentytwentytwo/?cat=1">Uncategorized</a>
+					</p>
+					<hr />
+				</div>
+			</div>
+
+			<div class="page-end">
+				<p class="footers footer2">
+					<a href="https://wordpress.org/themes/twentytwentytwo/" class="twenty-twenty-two"
+						>Twenty Twenty-Two</a
+					>
+					<span>
+						Proudly powered by
+						<a href="https://wordpress.org">WordPress</a>
+					</span>
+				</p>
+			</div>
+		</div>
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>
