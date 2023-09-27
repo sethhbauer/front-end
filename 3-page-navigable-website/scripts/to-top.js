@@ -1,7 +1,7 @@
 const topButton = document.getElementById("top-button");
 let onScreen = false;
 
-function buttonEnter() {
+const buttonEnter = () => {
 	onScreen = true;
 	let id = null;
 	let pos = -100;
@@ -15,9 +15,9 @@ function buttonEnter() {
 			topButton.style.bottom = pos + "px";
 		}
 	}
-}
+};
 
-function buttonExit() {
+const buttonExit = () => {
 	onScreen = false;
 	let id = null;
 	let pos = 50;
@@ -31,13 +31,11 @@ function buttonExit() {
 			topButton.style.bottom = pos + "px";
 		}
 	}
-}
-
-window.onscroll = function () {
-	scrollFunction();
 };
 
-function scrollFunction() {
+window.onscroll = () => scrollFunction();
+
+const scrollFunction = () => {
 	if (
 		(onScreen && document.documentElement.scrollTop > 880) ||
 		(!onScreen && !(document.documentElement.scrollTop > 880))
@@ -54,8 +52,6 @@ function scrollFunction() {
 	} else {
 		buttonEnter();
 	}
-}
+};
 
-function topFunction() {
-	document.documentElement.scrollTop = 0;
-}
+const topFunction = () => (document.documentElement.scrollTop = 0);

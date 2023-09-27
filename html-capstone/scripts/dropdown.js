@@ -2,7 +2,7 @@ const dropDown = document.getElementById("dropdown-content").style;
 const button = document.getElementById("dropdown-button");
 let toggled = false;
 
-function toggleDropdown() {
+const toggleDropdown = () => {
 	if (toggled === false) {
 		dropDown.display = "block";
 		button.innerHTML = "&#9653;";
@@ -12,16 +12,14 @@ function toggleDropdown() {
 		button.innerHTML = "&#9663;";
 		toggled = false;
 	}
-}
+};
 
-function showDropdown() {
-	dropDown.display = "block";
-}
+const showDropdown = () => (dropDown.display = "block");
 
-function hideDropdown() {
+const hideDropdown = () => {
 	if (toggled === true) {
 		return;
 	} else {
 		dropDown.display = "none";
 	}
-}
+};
