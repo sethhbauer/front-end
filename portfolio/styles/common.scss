@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Onest";
+	src: url("./Onest-VariableFont_wght.ttf");
+}
+
+html,
+body {
+	margin: 0;
+	font-family: "Onest", sans-serif;
+	color: #777777;
+	font-size: 15px;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	h3 {
+		font-weight: 600;
+		margin: 10px;
+	}
+}

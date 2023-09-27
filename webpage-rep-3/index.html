@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" onload="setHeight()" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webpage Replication 3</title>
+		<link rel="stylesheet" href="./styles/index.css" />
+	</head>
+	<body class="body">
+		<div class="index-content" id="index-content">
+			<div class="nav-bar">Hello</div>
+
+			<div class="main-content-container">
+				<div class="left">
+					<img src="https://source.unsplash.com/random/?computer" alt="Random Computer" />
+				</div>
+
+				<div class="right">
+					<h1>Login</h1>
+					<form action="https://httpbin.org/post">
+						<input
+							type="email"
+							name="email"
+							class="email"
+							id="email"
+							required
+							placeholder="Email" /><br />
+						<input
+							type="password"
+							name="password"
+							class="password"
+							id="password"
+							required
+							placeholder="Password" /><br />
+						<button type="submit">Submit</button><br />
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="./scripts/height.js"></script>
+	</body>
+</html>

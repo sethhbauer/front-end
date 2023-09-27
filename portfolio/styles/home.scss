@@ -1,0 +1,127 @@
+.hero-wrapper {
+	height: 800px;
+	position: relative;
+	background-image: url("https://source.unsplash.com/random/?sunset");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.hero-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		box-shadow: 0 7px 20px 0px #00000040;
+		background-color: #00000040;
+		color: #dddddd;
+		font-size: 1.35rem;
+		letter-spacing: 10px;
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+.about-wrapper {
+	margin-top: 16;
+	left: auto;
+	right: auto;
+	text-align: center;
+	padding: 60px;
+
+	.about-header {
+		p:nth-of-type(1) {
+			font-style: italic;
+		}
+
+		p:nth-of-type(2) {
+			text-align: justify;
+		}
+	}
+
+	.about-content-wrapper {
+		display: flex;
+		align-items: center;
+		margin-top: 45px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		.photo-wrapper > img {
+			aspect-ratio: 1/1;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		p {
+			margin: 20%;
+			text-align: justify;
+		}
+	}
+}
+
+.accolades-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #8394a5;
+	color: #dddddd;
+	height: 60px;
+
+	.accolade-item-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 15%;
+
+		span {
+			color: #fafafa;
+		}
+	}
+}
+
+.portfolio-wrapper {
+	margin: 15px;
+
+	.portfolio-header-wrapper {
+		height: 700px;
+		background-image: url("https://source.unsplash.com/random/?mountain");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		position: relative;
+
+		.portfolio-header-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			box-shadow: 0 7px 20px 0px #00000040;
+			background-color: #00000040;
+			color: #dddddd;
+			font-size: 1.35rem;
+			letter-spacing: 10px;
+			padding: 30px;
+			text-align: center;
+		}
+	}
+
+	.portfolio-section-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		.portfolio-content-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 15px;
+
+			img {
+				aspect-ratio: 1/1;
+				object-fit: cover;
+				width: 100%;
+			}
+		}
+	}
+}
